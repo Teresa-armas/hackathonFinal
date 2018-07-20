@@ -2,14 +2,26 @@
 <html lang="pt" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns:th="">
 <head>
     <meta charset="UTF-8">
-    <title>TOURADAS XPRESS: LOGIN</title>
+    <title>TOURADAS XPRESS: TOURADA NUM MINUTO</title>
     <link rel="icon">
     <meta name="keywords" content="touradas, cerveja, diversão, ilha Terceira, Terceira, Açores, Azores">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="login.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
           integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+            integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+            crossorigin="anonymous"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <body>
 
@@ -21,7 +33,6 @@
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -39,21 +50,27 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Lista de Compras</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Ver Perfil</a>
+                        <a class="dropdown-item" href="profile.html">Ver Perfil</a>
                     </div>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Procurar" aria-label="Procurar">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
+        </div>
+
+        <div id="login" style="background-color: darkslategrey">
+            <form action="http://localhost:8000/login_done" method="post">
+                <input type="text" name="username"> Nome de utilizador</input>
+                <input type="password" name="password"> Password</input><br>
+                <input type="checkbox" name="age"/>Tem de aceitar a nossa política de privacidade
+                <input type="submit" value="Fazer login"/>
             </form>
         </div>
+
     </nav>
 </header>
 
 <!--
 <script>
-    alert("BEM VINDO À TOURADAS XPRESS\nPARA COMEÇAR A USUFRUIR DO NOSSO SERVIÇO, BASTA CLICAR NO BOTÃO SEGUINTE");
+    alert("BEM VINDO À TOURADAS XPRESS\nPARA COMEÇAR A USUFRUIR DO NOSSO SERVIÇO, BASTA CLICAR NO BOTÃO OK!");
 </script>
 -->
 
@@ -65,21 +82,80 @@
 <div class="jumbotron" align="center">
     <h1 class="display-4">TOURADA NUM MINUTO</h1>
     <p class="lead">Quer uma tourada "à moda da ilha Terceira", mas não se quer chatear?
-        Basta clicar no botão abaixo e num minuto, tem uma tourada pronta, com licença de fogo, de tourada e requisições
+        Basta clicar no botão abaixo e num minuto, tem uma tourada pronta, com licença de fogo de artifício, licença de tourada e requisições
         já incluídas.</p>
     <hr class="my-4">
     <p>Só necessita de um cartão de crédito e nome para completar a sua compra</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">COMPRAR JÁ</a>
-</div>
 
-<div style="alignment: center" id="login">
-    <form action="http://localhost:8000/login_done" method="post">
-        <input type="text" name="username"><br>Nome de utilizador</input><br>
-        <input type="password" name="password"><br>Password</input><br>
-        <input type="checkbox" name="age"/>Tem de aceitar a nossa política de privacidade<br>
-        <input type="submit" value="Fazer login"/>
-    </form>
-</div>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="credit-card-div">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <h5 class="text-muted"> Número de Cartão de Crédito</h5>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <input type="text" class="form-control" placeholder="0000"/>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <input type="text" class="form-control" placeholder="0000"/>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <input type="text" class="form-control" placeholder="0000"/>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <input type="text" class="form-control" placeholder="0000"/>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <span class="help-block text-muted small-font"> Mês</span>
+                                <input type="text" class="form-control" placeholder="MM"/>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <span class="help-block text-muted small-font">  Ano</span>
+                                <input type="text" class="form-control" placeholder="AA"/>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <span class="help-block text-muted small-font">  CCV</span>
+                                <input type="text" class="form-control" placeholder="CCV"/>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img src="data:image/png;base64,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"
+                                     class="img-rounded"/>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-12 pad-adjust">
+                                <input type="text" class="form-control" placeholder="Nome no Cartão"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 pad-adjust">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" checked class="text-muted"> ###Save details for fast
+                                        payments. <a href="#">Learn More</a>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+                                <a href="buynow.html"><input type="submit" role="button"
+                                                             class="btn btn-warning btn-block"
+                                                             value="COMPRAR JÁ"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </div>
 <br>
