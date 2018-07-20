@@ -19,11 +19,11 @@ public class JpaCustomerDao extends GenericJpaDao<Customer> implements CustomerD
         super(Customer.class);
     }
 
-    /**
-     * @see CustomerDao#getCustomerIds()
-     */
+
+ /*
     public List<Integer> getCustomerIds() {
         return em.createQuery("select id from Customer", Integer.class)
                 .getResultList();
-    }
+    }*/
+
 }

@@ -1,7 +1,6 @@
 package org.academiadecodigo.hackathon.services;
 
 import org.academiadecodigo.hackathon.persistence.model.Customer;
-import org.academiadecodigo.hackathon.persistence.model.Recipient;
 
 import java.util.List;
 import java.util.Set;
@@ -41,5 +40,4 @@ public interface CustomerService {
      * @param id the customer id
      * @return the list of recipients of the customer
      */
-    List<Recipient> listRecipients(Integer id);
 }

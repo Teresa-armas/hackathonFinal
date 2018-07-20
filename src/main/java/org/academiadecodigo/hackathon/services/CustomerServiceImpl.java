@@ -1,7 +1,6 @@
 package org.academiadecodigo.hackathon.services;
 
 import org.academiadecodigo.hackathon.persistence.model.Customer;
-import org.academiadecodigo.hackathon.persistence.model.Recipient;
 import org.academiadecodigo.hackathon.persistence.model.Purchase;
 import org.academiadecodigo.hackathon.persistence.dao.CustomerDao;
 import org.springframework.stereotype.Service;
@@ -12,34 +11,20 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-/**
- * An {@link CustomerService} implementation
- */
 @Service
 public class CustomerServiceImpl implements CustomerService {
 
     private CustomerDao customerDao;
 
-    /**
-     * Sets the customer data access object
-     *
-     * @param customerDao the product DAO to set
-     */
     public void setCustomerDao(CustomerDao customerDao) {
         this.customerDao = customerDao;
     }
 
-    /**
-     * @see CustomerService#get(Integer)
-     */
     @Override
     public Customer get(Integer id) {
         return customerDao.findById(id);
     }
 
-    /**
-     * @see CustomerService#getBalance(Integer)
-     */
     @Override
     public double getBalance(Integer id) {
 
@@ -58,9 +43,6 @@ public class CustomerServiceImpl implements CustomerService {
         return balance;
     }
 
-    /**
-     * @see CustomerService#listCustomerAccountIds(Integer)
-     */
     @Override
     public Set<Integer> listCustomerAccountIds(Integer id) {
 
@@ -80,19 +62,4 @@ public class CustomerServiceImpl implements CustomerService {
         return accountIds;
     }
 
-    /**
-     * @see CustomerService#listRecipients(Integer)
-     */
-    @Transactional(readOnly = true)
-    @Override
-    public List<Recipient> listRecipients(Integer id) {
-
-        Customer customer = customerDao.findById(id);
-
-        if (customer == null) {
-            throw new IllegalArgumentException("Customer does not exists");
-        }
-
-        return new ArrayList<>(customerDao.findById(id).getRecipients());
-    }
 }
