@@ -6,7 +6,6 @@ import org.academiadecodigo.hackathon.persistence.dao.CustomerDao;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -25,26 +24,7 @@ public class CustomerServiceImpl implements CustomerService {
         return customerDao.findById(id);
     }
 
-    @Override
-    public double getBalance(Integer id) {
-
-        Customer customer = customerDao.findById(id);
-
-        if (customer == null) {
-            throw new IllegalArgumentException("Customer does not exists");
-        }
-
-        List<Purchase> accounts = customer.getAccounts();
-
-        double balance = 0;
-        for (Purchase account : accounts) {
-        }
-
-        return balance;
-    }
-
-    @Override
-    public Set<Integer> listCustomerAccountIds(Integer id) {
+    public Set<Integer> listProducts(Integer id) {
 
         Customer customer = customerDao.findById(id);
 
@@ -53,13 +33,18 @@ public class CustomerServiceImpl implements CustomerService {
         }
 
         Set<Integer> accountIds = new HashSet<>();
-        List<Purchase> accounts = customer.getAccounts();
+        List<Purchase> accounts = customer.getPurchases();
 
         for (Purchase account : accounts) {
             accountIds.add(account.getId());
         }
 
         return accountIds;
+    }
+
+    @Transactional
+    public void addCustomer(Customer customer){
+        this.customerDao.saveOrUpdate(customer);
     }
 
 }

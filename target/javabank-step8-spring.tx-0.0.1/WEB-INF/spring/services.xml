@@ -3,16 +3,13 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="authService" class="org.academiadecodigo.hackathon.services.AuthServiceImpl">
-        <property name="customerService" ref="customerService"/>
-    </bean>
 
     <bean id="customerService" class="org.academiadecodigo.hackathon.services.CustomerServiceImpl">
         <property name="customerDao" ref="customerDao"/>
     </bean>
 
-    <bean id="accountService" class="org.academiadecodigo.hackathon.services.AccountServiceImpl">
-        <property name="accountDao" ref="accountDao"/>
+    <bean id="purchaseService" class="org.academiadecodigo.hackathon.services.PurchaseService">
+        <property name="purchaseDao" ref="purchaseDao"/>
     </bean>
 
 </beans>

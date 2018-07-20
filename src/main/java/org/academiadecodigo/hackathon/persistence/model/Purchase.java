@@ -17,6 +17,7 @@ public class Purchase extends AbstractModel {
     private int totalPrice;
     private String address;
 
+    @MapKey(name = "product_id")
     private HashMap<Product, Integer> map;
 
     public Customer getCustomer() {
@@ -38,11 +39,13 @@ public class Purchase extends AbstractModel {
         if (quantity == 0) {
             if (this.map.containsKey(product)) {
                 this.map.remove(product);
+                updateTotalPrice();
             }
             return;
         }
 
         this.map.put(product, quantity);
+        updateTotalPrice();
     }
 
     public int getTotalPrice() {
