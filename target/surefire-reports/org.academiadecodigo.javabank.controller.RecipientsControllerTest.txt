@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: org.academiadecodigo.javabank.controller.RecipientsControllerTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.37 sec <<< FAILURE!
-getRecipientsTest(org.academiadecodigo.javabank.controller.RecipientsControllerTest)  Time elapsed: 0.274 sec  <<< ERROR!
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.389 sec <<< FAILURE!
+getRecipientsTest(org.academiadecodigo.javabank.controller.RecipientsControllerTest)  Time elapsed: 0.294 sec  <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 Mockito cannot mock this class: interface org.academiadecodigo.javabank.view.View.
 
@@ -17,7 +17,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -99,7 +99,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection

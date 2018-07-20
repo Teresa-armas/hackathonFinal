@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: org.academiadecodigo.javabank.services.CustomerServiceImplTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.036 sec <<< FAILURE!
-testListCustomerAccountIdsInvalidId(org.academiadecodigo.javabank.services.CustomerServiceImplTest)  Time elapsed: 0 sec  <<< ERROR!
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.08 sec <<< FAILURE!
+testListCustomerAccountIdsInvalidId(org.academiadecodigo.javabank.services.CustomerServiceImplTest)  Time elapsed: 0.04 sec  <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 Mockito cannot mock this class: interface org.academiadecodigo.javabank.persistence.dao.CustomerDao.
 
@@ -17,7 +17,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -102,7 +102,7 @@ Caused by: java.lang.IllegalArgumentException: Unknown Java version: 10
 	at org.academiadecodigo.javabank.controller.RecipientsControllerTest.setup(RecipientsControllerTest.java:29)
 	... 29 more
 
-testListCustomerAccountIds(org.academiadecodigo.javabank.services.CustomerServiceImplTest)  Time elapsed: 0.004 sec  <<< ERROR!
+testListCustomerAccountIds(org.academiadecodigo.javabank.services.CustomerServiceImplTest)  Time elapsed: 0.009 sec  <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 Mockito cannot mock this class: interface org.academiadecodigo.javabank.persistence.dao.CustomerDao.
 
@@ -117,7 +117,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -202,7 +202,7 @@ Caused by: java.lang.IllegalArgumentException: Unknown Java version: 10
 	at org.academiadecodigo.javabank.controller.RecipientsControllerTest.setup(RecipientsControllerTest.java:29)
 	... 29 more
 
-testGet(org.academiadecodigo.javabank.services.CustomerServiceImplTest)  Time elapsed: 0.009 sec  <<< ERROR!
+testGet(org.academiadecodigo.javabank.services.CustomerServiceImplTest)  Time elapsed: 0.01 sec  <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 Mockito cannot mock this class: interface org.academiadecodigo.javabank.persistence.dao.CustomerDao.
 
@@ -217,7 +217,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -302,7 +302,7 @@ Caused by: java.lang.IllegalArgumentException: Unknown Java version: 10
 	at org.academiadecodigo.javabank.controller.RecipientsControllerTest.setup(RecipientsControllerTest.java:29)
 	... 29 more
 
-testGetBalance(org.academiadecodigo.javabank.services.CustomerServiceImplTest)  Time elapsed: 0.012 sec  <<< ERROR!
+testGetBalance(org.academiadecodigo.javabank.services.CustomerServiceImplTest)  Time elapsed: 0.009 sec  <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 Mockito cannot mock this class: interface org.academiadecodigo.javabank.persistence.dao.CustomerDao.
 
@@ -317,7 +317,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -402,7 +402,7 @@ Caused by: java.lang.IllegalArgumentException: Unknown Java version: 10
 	at org.academiadecodigo.javabank.controller.RecipientsControllerTest.setup(RecipientsControllerTest.java:29)
 	... 29 more
 
-testGetBalanceInvalidCustomer(org.academiadecodigo.javabank.services.CustomerServiceImplTest)  Time elapsed: 0.009 sec  <<< ERROR!
+testGetBalanceInvalidCustomer(org.academiadecodigo.javabank.services.CustomerServiceImplTest)  Time elapsed: 0.012 sec  <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 Mockito cannot mock this class: interface org.academiadecodigo.javabank.persistence.dao.CustomerDao.
 
@@ -417,7 +417,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection

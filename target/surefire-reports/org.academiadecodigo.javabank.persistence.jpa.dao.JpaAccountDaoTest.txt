@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.203 sec <<< FAILURE!
-testDeleteChecking(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoTest)  Time elapsed: 0.037 sec  <<< ERROR!
+Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.284 sec <<< FAILURE!
+testDeleteChecking(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoTest)  Time elapsed: 0.059 sec  <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 Mockito cannot mock this class: interface javax.persistence.EntityManager.
 
@@ -17,7 +17,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -102,7 +102,7 @@ Caused by: java.lang.IllegalArgumentException: Unknown Java version: 10
 	at org.academiadecodigo.javabank.controller.RecipientsControllerTest.setup(RecipientsControllerTest.java:29)
 	... 29 more
 
-testFindAll(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoTest)  Time elapsed: 0.033 sec  <<< ERROR!
+testFindAll(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoTest)  Time elapsed: 0.038 sec  <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 Mockito cannot mock this class: interface javax.persistence.EntityManager.
 
@@ -117,7 +117,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -202,7 +202,7 @@ Caused by: java.lang.IllegalArgumentException: Unknown Java version: 10
 	at org.academiadecodigo.javabank.controller.RecipientsControllerTest.setup(RecipientsControllerTest.java:29)
 	... 29 more
 
-testDeleteSavings(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoTest)  Time elapsed: 0.032 sec  <<< ERROR!
+testDeleteSavings(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoTest)  Time elapsed: 0.053 sec  <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 Mockito cannot mock this class: interface javax.persistence.EntityManager.
 
@@ -217,7 +217,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -302,7 +302,7 @@ Caused by: java.lang.IllegalArgumentException: Unknown Java version: 10
 	at org.academiadecodigo.javabank.controller.RecipientsControllerTest.setup(RecipientsControllerTest.java:29)
 	... 29 more
 
-testSaveOrUpdateChecking(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoTest)  Time elapsed: 0.026 sec  <<< ERROR!
+testSaveOrUpdateChecking(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoTest)  Time elapsed: 0.03 sec  <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 Mockito cannot mock this class: interface javax.persistence.EntityManager.
 
@@ -317,7 +317,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -402,7 +402,7 @@ Caused by: java.lang.IllegalArgumentException: Unknown Java version: 10
 	at org.academiadecodigo.javabank.controller.RecipientsControllerTest.setup(RecipientsControllerTest.java:29)
 	... 29 more
 
-testFindByIdChecking(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoTest)  Time elapsed: 0.024 sec  <<< ERROR!
+testFindByIdChecking(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoTest)  Time elapsed: 0.039 sec  <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 Mockito cannot mock this class: interface javax.persistence.EntityManager.
 
@@ -417,7 +417,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -502,7 +502,7 @@ Caused by: java.lang.IllegalArgumentException: Unknown Java version: 10
 	at org.academiadecodigo.javabank.controller.RecipientsControllerTest.setup(RecipientsControllerTest.java:29)
 	... 29 more
 
-testSaveOrUpdateSavings(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoTest)  Time elapsed: 0.023 sec  <<< ERROR!
+testSaveOrUpdateSavings(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoTest)  Time elapsed: 0.029 sec  <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 Mockito cannot mock this class: interface javax.persistence.EntityManager.
 
@@ -517,7 +517,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -602,7 +602,7 @@ Caused by: java.lang.IllegalArgumentException: Unknown Java version: 10
 	at org.academiadecodigo.javabank.controller.RecipientsControllerTest.setup(RecipientsControllerTest.java:29)
 	... 29 more
 
-testFindByIdSavings(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoTest)  Time elapsed: 0.027 sec  <<< ERROR!
+testFindByIdSavings(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoTest)  Time elapsed: 0.034 sec  <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 Mockito cannot mock this class: interface javax.persistence.EntityManager.
 
@@ -617,7 +617,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection

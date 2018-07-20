@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoIntegrationTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.007 sec <<< FAILURE!
-testDeleteAccountOwned(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoIntegrationTest)  Time elapsed: 0 sec  <<< ERROR!
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE!
+testDeleteAccountOwned(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoIntegrationTest)  Time elapsed: 0.001 sec  <<< ERROR!
 org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [WEB-INF/spring/spring-config.xml]; nested exception is java.io.FileNotFoundException: class path resource [WEB-INF/spring/spring-config.xml] cannot be opened because it does not exist
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344)
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
@@ -137,7 +137,7 @@ Caused by: java.io.FileNotFoundException: class path resource [WEB-INF/spring/sp
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330)
 	... 37 more
 
-testUpdateAccount(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoIntegrationTest)  Time elapsed: 0 sec  <<< ERROR!
+testUpdateAccount(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoIntegrationTest)  Time elapsed: 0.001 sec  <<< ERROR!
 org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [WEB-INF/spring/spring-config.xml]; nested exception is java.io.FileNotFoundException: class path resource [WEB-INF/spring/spring-config.xml] cannot be opened because it does not exist
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344)
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
@@ -182,7 +182,7 @@ Caused by: java.io.FileNotFoundException: class path resource [WEB-INF/spring/sp
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330)
 	... 37 more
 
-testFindAllFail(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoIntegrationTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testFindAllFail(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoIntegrationTest)  Time elapsed: 0 sec  <<< ERROR!
 org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [WEB-INF/spring/spring-config.xml]; nested exception is java.io.FileNotFoundException: class path resource [WEB-INF/spring/spring-config.xml] cannot be opened because it does not exist
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344)
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
@@ -314,7 +314,7 @@ Caused by: java.io.FileNotFoundException: class path resource [WEB-INF/spring/sp
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330)
 	... 36 more
 
-testFindById(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoIntegrationTest)  Time elapsed: 0.003 sec  <<< ERROR!
+testFindById(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoIntegrationTest)  Time elapsed: 0 sec  <<< ERROR!
 org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [WEB-INF/spring/spring-config.xml]; nested exception is java.io.FileNotFoundException: class path resource [WEB-INF/spring/spring-config.xml] cannot be opened because it does not exist
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344)
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
@@ -358,7 +358,7 @@ Caused by: java.io.FileNotFoundException: class path resource [WEB-INF/spring/sp
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330)
 	... 36 more
 
-testFindByIdInvalid(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoIntegrationTest)  Time elapsed: 0.002 sec  <<< ERROR!
+testFindByIdInvalid(org.academiadecodigo.javabank.persistence.jpa.dao.JpaAccountDaoIntegrationTest)  Time elapsed: 0.001 sec  <<< ERROR!
 org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [WEB-INF/spring/spring-config.xml]; nested exception is java.io.FileNotFoundException: class path resource [WEB-INF/spring/spring-config.xml] cannot be opened because it does not exist
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344)
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)

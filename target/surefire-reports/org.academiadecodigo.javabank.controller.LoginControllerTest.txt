@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: org.academiadecodigo.javabank.controller.LoginControllerTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.09 sec <<< FAILURE!
-onLoginTest(org.academiadecodigo.javabank.controller.LoginControllerTest)  Time elapsed: 0.053 sec  <<< ERROR!
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.078 sec <<< FAILURE!
+onLoginTest(org.academiadecodigo.javabank.controller.LoginControllerTest)  Time elapsed: 0.029 sec  <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 Mockito cannot mock this class: interface org.academiadecodigo.javabank.services.AuthService.
 
@@ -17,7 +17,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -102,7 +102,7 @@ Caused by: java.lang.IllegalArgumentException: Unknown Java version: 10
 	at org.academiadecodigo.javabank.controller.RecipientsControllerTest.setup(RecipientsControllerTest.java:29)
 	... 29 more
 
-initTest(org.academiadecodigo.javabank.controller.LoginControllerTest)  Time elapsed: 0.02 sec  <<< ERROR!
+initTest(org.academiadecodigo.javabank.controller.LoginControllerTest)  Time elapsed: 0.018 sec  <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 Mockito cannot mock this class: interface org.academiadecodigo.javabank.services.AuthService.
 
@@ -117,7 +117,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -202,7 +202,7 @@ Caused by: java.lang.IllegalArgumentException: Unknown Java version: 10
 	at org.academiadecodigo.javabank.controller.RecipientsControllerTest.setup(RecipientsControllerTest.java:29)
 	... 29 more
 
-onLoginFailTest(org.academiadecodigo.javabank.controller.LoginControllerTest)  Time elapsed: 0.017 sec  <<< ERROR!
+onLoginFailTest(org.academiadecodigo.javabank.controller.LoginControllerTest)  Time elapsed: 0.013 sec  <<< ERROR!
 org.mockito.exceptions.base.MockitoException: 
 Mockito cannot mock this class: interface org.academiadecodigo.javabank.services.AuthService.
 
@@ -217,7 +217,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="11" failures="0" name="org.academiadecodigo.javabank.services.AccountServiceImplTest" time="0.109" errors="11" skipped="0">
+<testsuite tests="11" failures="0" name="org.academiadecodigo.javabank.services.AccountServiceImplTest" time="0.155" errors="11" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="10.0.1+10"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib"/>
     <property name="gopherProxySet" value="false"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/codecadet/Desktop/my-current-repo"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/codecadet/Desktop/hackathonFinal"/>
     <property name="java.vm.vendor" value="&quot;Oracle Corporation&quot;"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,12 +16,12 @@
     <property name="user.country" value="PT"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/codecadet/Desktop/my-current-repo"/>
+    <property name="user.dir" value="/Users/codecadet/Desktop/hackathonFinal"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="10.0.1+10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="java.io.tmpdir" value="/var/folders/xj/5fd6p7ws3xsfmshngfn11_840000gq/T/"/>
+    <property name="java.io.tmpdir" value="/var/folders/yj/xpfbn1qd77s2r2ztt7431y0r0000gq/T/"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
@@ -34,7 +34,7 @@
     <property name="java.class.version" value="54.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.13.5"/>
+    <property name="os.version" value="10.13.4"/>
     <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.5.2/libexec/lib/jansi-native"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="user.home" value="/Users/codecadet"/>
@@ -46,7 +46,7 @@
     <property name="java.class.path" value="/usr/local/Cellar/maven/3.5.2/libexec/boot/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="10"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -DskipTest tomcat7:redeploy"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -54,6 +54,7 @@
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="10.0.1"/>
     <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="skipTest" value="true"/>
     <property name="maven.home" value="/usr/local/Cellar/maven/3.5.2/libexec"/>
     <property name="file.separator" value="/"/>
     <property name="java.version.date" value="2018-04-17"/>
@@ -65,7 +66,7 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="org.academiadecodigo.javabank.services.AccountServiceImplTest" name="testWithdrawInvalidAccount" time="0.013">
+  <testcase classname="org.academiadecodigo.javabank.services.AccountServiceImplTest" name="testWithdrawInvalidAccount" time="0.038">
     <error message="
 Mockito cannot mock this class: interface org.academiadecodigo.javabank.persistence.dao.AccountDao.
 
@@ -80,7 +81,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection" type="org.mockito.exceptions.base.MockitoException">org.mockito.exceptions.base.MockitoException: 
@@ -97,7 +98,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -183,7 +184,7 @@ Caused by: java.lang.IllegalArgumentException: Unknown Java version: 10
 	... 29 more
 </error>
   </testcase>
-  <testcase classname="org.academiadecodigo.javabank.services.AccountServiceImplTest" name="testTransferCreditNotPossible" time="0.01">
+  <testcase classname="org.academiadecodigo.javabank.services.AccountServiceImplTest" name="testTransferCreditNotPossible" time="0.014">
     <error message="
 Mockito cannot mock this class: interface org.academiadecodigo.javabank.persistence.dao.AccountDao.
 
@@ -198,7 +199,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection" type="org.mockito.exceptions.base.MockitoException">org.mockito.exceptions.base.MockitoException: 
@@ -215,7 +216,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -301,7 +302,7 @@ Caused by: java.lang.IllegalArgumentException: Unknown Java version: 10
 	... 29 more
 </error>
   </testcase>
-  <testcase classname="org.academiadecodigo.javabank.services.AccountServiceImplTest" name="testAddSavings" time="0.011">
+  <testcase classname="org.academiadecodigo.javabank.services.AccountServiceImplTest" name="testAddSavings" time="0.012">
     <error message="
 Mockito cannot mock this class: interface org.academiadecodigo.javabank.persistence.dao.AccountDao.
 
@@ -316,7 +317,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection" type="org.mockito.exceptions.base.MockitoException">org.mockito.exceptions.base.MockitoException: 
@@ -333,7 +334,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -434,7 +435,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection" type="org.mockito.exceptions.base.MockitoException">org.mockito.exceptions.base.MockitoException: 
@@ -451,7 +452,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -537,7 +538,7 @@ Caused by: java.lang.IllegalArgumentException: Unknown Java version: 10
 	... 29 more
 </error>
   </testcase>
-  <testcase classname="org.academiadecodigo.javabank.services.AccountServiceImplTest" name="testTransferDebitNotPossible" time="0.008">
+  <testcase classname="org.academiadecodigo.javabank.services.AccountServiceImplTest" name="testTransferDebitNotPossible" time="0.023">
     <error message="
 Mockito cannot mock this class: interface org.academiadecodigo.javabank.persistence.dao.AccountDao.
 
@@ -552,7 +553,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection" type="org.mockito.exceptions.base.MockitoException">org.mockito.exceptions.base.MockitoException: 
@@ -569,7 +570,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -655,7 +656,7 @@ Caused by: java.lang.IllegalArgumentException: Unknown Java version: 10
 	... 29 more
 </error>
   </testcase>
-  <testcase classname="org.academiadecodigo.javabank.services.AccountServiceImplTest" name="testWithdraw" time="0.011">
+  <testcase classname="org.academiadecodigo.javabank.services.AccountServiceImplTest" name="testWithdraw" time="0.008">
     <error message="
 Mockito cannot mock this class: interface org.academiadecodigo.javabank.persistence.dao.AccountDao.
 
@@ -670,7 +671,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection" type="org.mockito.exceptions.base.MockitoException">org.mockito.exceptions.base.MockitoException: 
@@ -687,7 +688,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -773,7 +774,7 @@ Caused by: java.lang.IllegalArgumentException: Unknown Java version: 10
 	... 29 more
 </error>
   </testcase>
-  <testcase classname="org.academiadecodigo.javabank.services.AccountServiceImplTest" name="testAddChecking" time="0.008">
+  <testcase classname="org.academiadecodigo.javabank.services.AccountServiceImplTest" name="testAddChecking" time="0.013">
     <error message="
 Mockito cannot mock this class: interface org.academiadecodigo.javabank.persistence.dao.AccountDao.
 
@@ -788,7 +789,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection" type="org.mockito.exceptions.base.MockitoException">org.mockito.exceptions.base.MockitoException: 
@@ -805,7 +806,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -891,7 +892,7 @@ Caused by: java.lang.IllegalArgumentException: Unknown Java version: 10
 	... 29 more
 </error>
   </testcase>
-  <testcase classname="org.academiadecodigo.javabank.services.AccountServiceImplTest" name="testTransferInvalidDstAccount" time="0.011">
+  <testcase classname="org.academiadecodigo.javabank.services.AccountServiceImplTest" name="testTransferInvalidDstAccount" time="0.007">
     <error message="
 Mockito cannot mock this class: interface org.academiadecodigo.javabank.persistence.dao.AccountDao.
 
@@ -906,7 +907,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection" type="org.mockito.exceptions.base.MockitoException">org.mockito.exceptions.base.MockitoException: 
@@ -923,7 +924,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -1009,7 +1010,7 @@ Caused by: java.lang.IllegalArgumentException: Unknown Java version: 10
 	... 29 more
 </error>
   </testcase>
-  <testcase classname="org.academiadecodigo.javabank.services.AccountServiceImplTest" name="testDeposit" time="0.01">
+  <testcase classname="org.academiadecodigo.javabank.services.AccountServiceImplTest" name="testDeposit" time="0.011">
     <error message="
 Mockito cannot mock this class: interface org.academiadecodigo.javabank.persistence.dao.AccountDao.
 
@@ -1024,7 +1025,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection" type="org.mockito.exceptions.base.MockitoException">org.mockito.exceptions.base.MockitoException: 
@@ -1041,7 +1042,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -1127,7 +1128,7 @@ Caused by: java.lang.IllegalArgumentException: Unknown Java version: 10
 	... 29 more
 </error>
   </testcase>
-  <testcase classname="org.academiadecodigo.javabank.services.AccountServiceImplTest" name="testDepositInvalidAccount" time="0.008">
+  <testcase classname="org.academiadecodigo.javabank.services.AccountServiceImplTest" name="testDepositInvalidAccount" time="0.009">
     <error message="
 Mockito cannot mock this class: interface org.academiadecodigo.javabank.persistence.dao.AccountDao.
 
@@ -1142,7 +1143,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection" type="org.mockito.exceptions.base.MockitoException">org.mockito.exceptions.base.MockitoException: 
@@ -1159,7 +1160,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
@@ -1245,7 +1246,7 @@ Caused by: java.lang.IllegalArgumentException: Unknown Java version: 10
 	... 29 more
 </error>
   </testcase>
-  <testcase classname="org.academiadecodigo.javabank.services.AccountServiceImplTest" name="testTransfer" time="0.009">
+  <testcase classname="org.academiadecodigo.javabank.services.AccountServiceImplTest" name="testTransfer" time="0.01">
     <error message="
 Mockito cannot mock this class: interface org.academiadecodigo.javabank.persistence.dao.AccountDao.
 
@@ -1260,7 +1261,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection" type="org.mockito.exceptions.base.MockitoException">org.mockito.exceptions.base.MockitoException: 
@@ -1277,7 +1278,7 @@ JVM name           : Java HotSpot(TM) 64-Bit Server VM
 JVM version        : 10.0.1+10
 JVM info           : mixed mode
 OS name            : Mac OS X
-OS version         : 10.13.5
+OS version         : 10.13.4
 
 
 Underlying exception : java.lang.UnsupportedOperationException: Cannot define class using reflection
