@@ -20,6 +20,9 @@ public class CustomerController {
 
         Customer c = customerService.get(1);
 
+        Customer b = new Customer();
+        b.setName("gksnges");
+
         model.addAttribute("customer", c);
 
         return "list";

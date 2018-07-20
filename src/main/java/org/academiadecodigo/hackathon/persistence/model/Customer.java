@@ -45,7 +45,7 @@ public class Customer extends AbstractModel {
         return name;
     }
 
-    public void setFirstName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
