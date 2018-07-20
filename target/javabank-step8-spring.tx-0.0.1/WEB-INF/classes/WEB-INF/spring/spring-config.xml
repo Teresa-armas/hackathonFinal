@@ -5,7 +5,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
     <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
-        <property name="locations" value="classpath:javabank.properties"/>
+        <property name="locations" value="classpath:hackathon.properties"/>
     </bean>
 
     <!-- Use spring servlet for all requests, including static resources -->
@@ -13,7 +13,7 @@
 
     <!-- look for spring annotations inside the controller package -->
     <mvc:annotation-driven/>
-    <context:component-scan base-package="org.academiadecodigo.hackathon"/>
+    <context:component-scan base-package="org.academiadecodigo.hackathon.controller"/>
 
     <import resource="persistence.xml"/>
     <import resource="services.xml"/>

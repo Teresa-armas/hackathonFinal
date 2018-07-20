@@ -1,6 +1,5 @@
 package org.academiadecodigo.hackathon;
 
-import org.academiadecodigo.hackathon.persistence.model.Customer;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class App {

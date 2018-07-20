@@ -150,8 +150,8 @@
                     <url>http://localhost:8080/manager/text</url>
                     <server>tomcat</server>
                     <path>/hackathon</path>
-                    <username>luis</username>
-                    <password>admin</password>
+                    <username>alfredo</username>
+                    <password></password>
                 </configuration>
             </plugin>
         </plugins>
