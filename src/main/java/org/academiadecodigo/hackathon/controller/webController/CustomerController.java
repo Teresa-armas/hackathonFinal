@@ -18,14 +18,11 @@ public class CustomerController {
     public String list(Model model) {
         //popular a lista no modelo
 
-        Customer c = customerService.get(1);
+        //Customer c = customerService.get(1);
 
-        Customer b = new Customer();
-        b.setName("gksnges");
+        //model.addAttribute("customer", c);
 
-        model.addAttribute("customer", c);
-
-        return "list";
+        return "default";
 
     }
 

@@ -11,7 +11,7 @@
         <property name="customerDao" ref="customerDao"/>
     </bean>
 
-    <bean id="accountService" class="org.academiadecodigo.hackathon.services.AccountServiceImpl">
+    <bean id="accountService" class="org.academiadecodigo.hackathon.services.PurchaseService">
         <property name="accountDao" ref="accountDao"/>
     </bean>
 
