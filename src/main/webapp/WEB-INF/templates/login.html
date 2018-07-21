@@ -10,6 +10,100 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
           integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
+    <style>
+
+        .myButton {
+            border-radius: 5px;
+            padding: 15px 55px;
+            font-size: 22px;
+            text-decoration: none;
+            margin: 20px;
+            color: black;
+            position: relative;
+            display: inline-block;
+        }
+
+        .myButton:active {
+            transform: translate(0px, 5px);
+            -webkit-transform: translate(0px, 5px);
+            box-shadow: 0px 1px 0px 0px;
+        }
+
+        .green {
+
+            background-color: #d7d7d7;
+            box-shadow: 3px 5px 5px goldenrod;
+            border-radius: 2px;
+            transition: all 1s ease;
+            transform: scale(1);
+        }
+
+        .green:hover {
+            background-color: gold;
+            /*  Making button bigger on hover  */
+            transform: scale(1.5) perspective(1px)
+        }
+
+        .background {
+
+            background-image: url("http://1.bp.blogspot.com/_l9-voqxSgNc/TUXkz8k19lI/AAAAAAAAA_w/CsqY3byXCWM/s1600/DSCF0097.JPG");
+            background-attachment: fixed;
+            background-position-x: center;
+
+        }
+
+
+        .flex-container2 {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row-reverse;
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            -webkit-align-content: center;
+            -ms-flex-line-pack: center;
+            align-content: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .flex-item2:nth-child(1) {
+            -webkit-order: 1;
+            -ms-flex-order: 1;
+            order: 1;
+            -webkit-flex: 0 1 auto;
+            -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+            -webkit-align-self: auto;
+            -ms-flex-item-align: auto;
+            align-self: auto;
+        }
+
+        .flex-item2:nth-child(2) {
+            -webkit-order: 0;
+            -ms-flex-order: 0;
+            order: 0;
+            -webkit-flex: 0 1 auto;
+            -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+            -webkit-align-self: auto;
+            -ms-flex-item-align: auto;
+            align-self: auto;
+        }
+
+        p{
+            color: white;
+            font-family: Monaco;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -23,28 +117,14 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="main.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">TOURADA NUM MINUTO<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    </a>
-
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Lista de Compras</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Ver Perfil</a>
-                    </div>
-                </li>
-            </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Procurar" aria-label="Procurar">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
+                <div class="flex-container">
+                    <label for="staticEmail" class="flex-item">Email</label>&nbsp;
+                    <input type="text" class="form-control flex-item" id="staticEmail" value="email@example.com">&nbsp;
+                    <label for="inputPassword" class="flex-item">Password</label>&nbsp;
+                    <input type="password" class="form-control flex-item" id="inputPassword" placeholder="Password">&nbsp;
+                    <button type="submit" class="btn btn-primary flex-item">Login</button>&nbsp;
+                </div>
             </form>
         </div>
     </nav>
@@ -61,33 +141,50 @@
     <img src="img/DSCF0096.JPG" class="center-fit" alt="Responsive image">
 </div>
 -->
-<div class="jumbotron" align="center">
-    <h1 class="display-4">TOURADA NUM MINUTO</h1>
-    <p class="lead">Quer uma tourada "à moda da ilha Terceira", mas não se quer chatear?
-        Basta clicar no botão abaixo e num minuto, tem uma tourada pronta, com licença de fogo, de tourada e requisições
-        já incluídas.</p>
-    <hr class="my-4">
-    <p>Só necessita de um cartão de crédito e nome para completar a sua compra</p>
-    <a class="btn btn-primary btn-lg" href="/cart" role="button">COMPRAR JÁ</a>
+<div class="jumbotron background" align="center">
+
+    <div class="flex-container2">
+        <div class="flex-item2">
+            <div class="container">
+            <p class="lead">Quer uma tourada "à moda da ilha Terceira",</p>
+            <p>mas não se quer chatear?</p>
+            <p>Basta clicar no botão abaixo e num minuto, </p>
+            <p>tem uma tourada pronta, com licença de fogo, de tourada</p>
+            <p>requisições já incluídas.</p>
+            </div>
+        </div>
+        <div class="flex-item2">
+
+            <div class="container">
+                <form th:object= "${customer}" name="customer" th:action= "@{/million_dollar}" action="#" class="form-horizontal" role="form">
+                    <fieldset>
+                        <legend style = "color: white">Só a dois passos de uma tourada de sonho</legend>
+                        <div class="form-group">
+                            <label style = "color:white"class="col-sm-3 control-label" for="card-holder-name">Nome no cartão</label>
+                            <div class="col-sm-8">
+                                <input type="text" th:field="*{name}" class="form-control" name="card-holder-name" id="card-holder-name"
+                                       placeholder="ex: Pedro Antoninho">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label style = "color:white" class="col-sm-3 control-label" for="card-number">Número do cartão</label>
+                            <div class="col-sm-8">
+                                <input type="text" th:field="*{creditCard}" class="form-control" name="card-number" id="card-number"
+                                       placeholder="ex: 9344 9425 54854 5495 34">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div id="buttons">
+                        <a href="#" class="myButton green">Comprar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div style="alignment: center" id="login">
-    <form th:object="${customer}"  name="customer" th:action = "@{/login_done}" action="#" method="post">
-        <input type="text" th:field="*{name}" ><br>Nome de utilizador</input><br>
-        <input type="submit" value="Fazer login"/>
-    </form>
-</div>
 
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br><br>
-<br>
 <br>
 
 <!-- <div align="center" class="video">
