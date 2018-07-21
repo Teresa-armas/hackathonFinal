@@ -4,66 +4,78 @@
     <meta charset="UTF-8">
     <title>Estudante</title>
 
-    <style>
-        .description{
+    <link rel="icon">
+    <meta name="keywords" content="touradas, cerveja, diversão, ilha Terceira, Terceira, Açores, Azores">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+          integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
-        }
-
-    </style>
 
 </head>
-<body>
+<body align="center">
 
-<div class="page-title">
+<header>
 
-</div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">TOURADAS XPRESS | </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-<div class="description">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="main.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TOURADA NUM MINUTO<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <header th:="${customer.name}">Garôte</header>
+                    </a>
 
-    <ul>
-        <div>
-            <p>Escolheu o pacote Estudante por 2000 EUROS</p>
-            <p>Este pacote inclui:</p>
-            <ul>
-                <li>4 touros</li>
-                <img src="images/bull.jpeg"/>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Lista de Compras</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Ver Perfil</a>
+                    </div>
+                </li>
             </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Procurar" aria-label="Procurar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
+            </form>
         </div>
-        <div>
-            <ul>
-                <li>60 grades de Cerveja Sagres</li>
-                <img src="images/sagres.png"/>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li>Palhaços</li>
-                <img src="images/palhaço.jpeg"/>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li>3 Carros etnográficos</li>
-                <img src="images/carro-etnografo.jpg"/>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li>Todas as licenças aprovadas</li>
-                <img src="images/licenca.png"/>
-            </ul>
-        </div>
+    </nav>
+</header>
+<div class="description" >
 
+    <h2>Escolheu o pacote Estudante por 2000 EUROS</h2>
+    <h3>Este pacote inclui:</h3>
+    <br>
+    <p>4 touros</p>
+    <img src="images/bull.jpeg" width="250px"/>
 
-    </ul>
+    <p>60 grades de Cerveja Sagres</p>
+    <img src="images/sagres.png" width="250px"/>
+
+    <p>Palhaços</p>
+    <img src="images/palhaco.jpeg" width="250px"/>
+
+    <p>3 Carros etnográficos</p>
+    <img src="images/carro-etnografo.jpg" width="250px"/>
+
+    <p>Todas as licenças aprovadas</p>
+    <img src="images/licenca.png" width="250px"/>
+
 </div>
 
 <div>
-    <button>Compre</button>
-</div>
-
-<div class="card-footer text-muted">
-    <p align="center">XPRESS TEAM © 2018</p>
+    <button>Comprar</button>
 </div>
 
 <div class="footer texte-muted">
