@@ -152,3 +152,7 @@ a {
     color: grey;
     text-align: center;
 }
+
+.background {
+    padding: 500px 250px 250px 250px;
+}
