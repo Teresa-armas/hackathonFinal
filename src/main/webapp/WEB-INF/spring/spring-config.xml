@@ -13,7 +13,7 @@
 
     <!-- look for spring annotations inside the controller package -->
     <mvc:annotation-driven/>
-    <context:component-scan base-package="org.academiadecodigo.hackathon.controller"/>
+    <context:component-scan base-package="org.academiadecodigo.hackathon"/>
 
     <import resource="persistence.xml"/>
     <import resource="services.xml"/>
