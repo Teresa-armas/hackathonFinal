@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="">
 <head>
     <meta charset="UTF-8">
     <title></title>
@@ -13,6 +13,39 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 </head>
 <body>
+
+<header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">TOURADAS XPRESS | </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="main.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">TOURADA NUM MINUTO<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <header th:="${customer.name}">Garôte</header>
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Lista de Compras</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="profile.html">Ver Perfil</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+</header>
 
 <p>Este pacote inclui:</p>
 <ul>

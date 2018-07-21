@@ -1,6 +1,7 @@
 /Users/codecadet/Desktop/hackathonFinal/hackathonFinal/src/main/java/org/academiadecodigo/hackathon/persistence/model/AbstractModel.java
 /Users/codecadet/Desktop/hackathonFinal/hackathonFinal/src/main/java/org/academiadecodigo/hackathon/persistence/model/product/Product.java
 /Users/codecadet/Desktop/hackathonFinal/hackathonFinal/src/main/java/org/academiadecodigo/hackathon/services/PurchaseServiceInterface.java
+/Users/codecadet/Desktop/hackathonFinal/hackathonFinal/src/main/java/org/academiadecodigo/hackathon/controller/webController/ProfileController.java
 /Users/codecadet/Desktop/hackathonFinal/hackathonFinal/src/main/java/org/academiadecodigo/hackathon/persistence/dao/Dao.java
 /Users/codecadet/Desktop/hackathonFinal/hackathonFinal/src/main/java/org/academiadecodigo/hackathon/persistence/model/Purchase.java
 /Users/codecadet/Desktop/hackathonFinal/hackathonFinal/src/main/java/org/academiadecodigo/hackathon/services/AuthService.java
@@ -11,8 +12,10 @@
 /Users/codecadet/Desktop/hackathonFinal/hackathonFinal/src/main/java/org/academiadecodigo/hackathon/persistence/dao/jpa/GenericJpaDao.java
 /Users/codecadet/Desktop/hackathonFinal/hackathonFinal/src/main/java/org/academiadecodigo/hackathon/services/AuthServiceImpl.java
 /Users/codecadet/Desktop/hackathonFinal/hackathonFinal/src/main/java/org/academiadecodigo/hackathon/persistence/model/Model.java
+/Users/codecadet/Desktop/hackathonFinal/hackathonFinal/src/main/java/org/academiadecodigo/hackathon/controller/webController/DefaultController.java
 /Users/codecadet/Desktop/hackathonFinal/hackathonFinal/src/main/java/org/academiadecodigo/hackathon/services/CustomerServiceImpl.java
 /Users/codecadet/Desktop/hackathonFinal/hackathonFinal/src/main/java/org/academiadecodigo/hackathon/persistence/dao/PurchaseDao.java
+/Users/codecadet/Desktop/hackathonFinal/hackathonFinal/src/main/java/org/academiadecodigo/hackathon/controller/webController/LowCostController.java
 /Users/codecadet/Desktop/hackathonFinal/hackathonFinal/src/main/java/org/academiadecodigo/hackathon/services/PurchaseService.java
 /Users/codecadet/Desktop/hackathonFinal/hackathonFinal/src/main/java/org/academiadecodigo/hackathon/App.java
 /Users/codecadet/Desktop/hackathonFinal/hackathonFinal/src/main/java/org/academiadecodigo/hackathon/persistence/dao/CustomerDao.java
