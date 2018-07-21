@@ -18,18 +18,15 @@ h1, li {
 }
 
 form {
+    background-color: white;
     size: 300px 300px;
-}
-
-footer {
-    color: black;
-    alignment: bottom;
 }
 
 body {
     background-image: url("");
     background-repeat: no-repeat;
     background-position: center;
+    position: center;
 }
 
 #signup {
@@ -90,6 +87,11 @@ a {
     color: black;
 }
 
+.content{
+    max-width: 500px;
+    margin: auto;
+}
+
 .flex-container {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -133,4 +135,21 @@ a {
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
+}
+
+.footer-text{
+    font-size: 15px;
+    color: white;
+}
+
+
+.footer{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    background-color: grey;
+    color: grey;
+    text-align: center;
+
 }
