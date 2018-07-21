@@ -8,7 +8,6 @@ import java.util.HashMap;
 @Entity
 @Table(name = "purchases")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "account_type")
 public class Purchase extends AbstractModel {
 
     @ManyToOne

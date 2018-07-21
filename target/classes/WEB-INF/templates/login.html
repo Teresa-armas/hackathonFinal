@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns:th="">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>TOURADAS XPRESS: LOGIN</title>
@@ -33,7 +33,6 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <header th:="${customer.name}">Garôte</header>
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -69,11 +68,11 @@
         já incluídas.</p>
     <hr class="my-4">
     <p>Só necessita de um cartão de crédito e nome para completar a sua compra</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">COMPRAR JÁ</a>
+    <a class="btn btn-primary btn-lg" href="/cart" role="button">COMPRAR JÁ</a>
 </div>
 
 <div style="alignment: center" id="login">
-    <form action="http://localhost:8000/login_done" method="post">
+    <form name="customer" action="http://localhost:8080/hackathon/login_done" method="post">
         <input type="text" name="username"><br>Nome de utilizador</input><br>
         <input type="password" name="password"><br>Password</input><br>
         <input type="checkbox" name="age"/>Tem de aceitar a nossa política de privacidade<br>
