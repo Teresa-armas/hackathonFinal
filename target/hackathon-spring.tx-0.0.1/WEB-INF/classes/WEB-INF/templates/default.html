@@ -12,52 +12,61 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 </head>
-<body>
+<body align="center">
+<audio controls autoplay>
+    <source src="images/espana-cani.mp3" type="audio/mpeg">
+</audio>
 
 <header>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">TOURADAS XPRESS | </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="main.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">TOURADA NUM MINUTO<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <header th:="${customer.name}">Garôte</header>
-                </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">TOURADAS XPRESS | </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Lista de Compras</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="profile.html">Ver Perfil</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <form class="form-inline my-2 my-lg-0">
+                <div class="flex-container">
+                    <label for="staticEmail" class="flex-item">Email</label>&nbsp;
+                    <input type="text" class="form-control flex-item" id="staticEmail" value="email@example.com">&nbsp;
+                    <label for="inputPassword" class="flex-item">Password</label>&nbsp;
+                    <input type="password" class="form-control flex-item" id="inputPassword" placeholder="Password">&nbsp;
+                    <button type="submit" class="btn btn-primary flex-item">Login</button>&nbsp;
                 </div>
-            </li>
-        </ul>
-    </div>
-</nav>
+
+            </form>
+        </div>
+    </nav>
 </header>
 
-<p>Este pacote inclui:</p>
-<ul>
-    <li>4 touros</li>
-    <li>Todas as liçenças aprovadas</li>
-    <li>2 rolotes</li>
-    <li>5º Touro</li>
-</ul>
+<div class="description">
+    <h2>Escolheu o pacote Completo por 2600 EUROS</h2>
+    <h3>Este pacote inclui:</h3>
+    <br>
+    <p>4 touros</p>
+    <img src="img/bull.jpeg" width="250px"/>
 
-<div class="card-footer text-muted">
-    <p align="center">XPRESS TEAM © 2018</p>
+    <p>60 grades de Cerveja Sagres</p>
+    <img src="img/sagres.png" width="250px"/>
+
+    <p>2 Rolotes</p>
+    <img src="img/roulote.jpeg" width="250px"/>
+
+    <p>5º Touro</p>
+    <img src="img/5touro.jpg" width="250px"/>
+
+    <p>Todas as licenças aprovadas</p>
+    <img src="img/licenca.png" width="250px"/>
+
+<div>
+    <button>Comprar</button>
 </div>
 
+<div class="footer text-muted">
+    <p class="footer-text">XPRESS TEAM © 2018</p>
+</div>
 </body>
 </html>

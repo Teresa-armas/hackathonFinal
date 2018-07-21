@@ -3,18 +3,16 @@ package org.academiadecodigo.hackathon.persistence.model.product;
 import org.academiadecodigo.hackathon.persistence.model.AbstractModel;
 import org.academiadecodigo.hackathon.persistence.model.Purchase;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.persistence.MappedSuperclass;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "products")
 public class Product extends AbstractModel {
 
-    @ManyToOne
+    @ManyToOne(
+            fetch = FetchType.EAGER
+    )
     private Purchase purchase;
-
 
     private String productName;
     private int price;
@@ -42,4 +40,5 @@ public class Product extends AbstractModel {
     public Purchase getPurchase() {
         return purchase;
     }
+
 }

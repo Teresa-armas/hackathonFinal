@@ -6,7 +6,6 @@ org/academiadecodigo/hackathon/controller/webController/LowCostController.class
 org/academiadecodigo/hackathon/controller/webController/LoginController.class
 org/academiadecodigo/hackathon/controller/webController/DefaultController.class
 org/academiadecodigo/hackathon/persistence/dao/CustomerDao.class
-org/academiadecodigo/hackathon/persistence/model/Purchase.class
 org/academiadecodigo/hackathon/controller/webController/ProfileController.class
 org/academiadecodigo/hackathon/persistence/model/product/Product.class
 org/academiadecodigo/hackathon/services/AuthService.class

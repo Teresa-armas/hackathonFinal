@@ -22,6 +22,11 @@ public class ProductsServiceImpl implements ProductsService {
         return productDao.findAll();
     }
 
+    @Override
+    public Product getById(Integer id){
+        return this.productDao.findById(id);
+    }
+
     @Autowired
     public void setProductDao(Dao<Product> productDao) {
         this.productDao = productDao;

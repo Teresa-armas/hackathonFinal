@@ -4,6 +4,8 @@ import org.academiadecodigo.hackathon.persistence.model.product.Product;
 
 import javax.persistence.*;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "purchases")
@@ -16,8 +18,20 @@ public class Purchase extends AbstractModel {
     private int totalPrice;
     private String address;
 
-    @MapKey(name = "product_id")
-    private HashMap<Product, Integer> map;
+
+    @OneToMany(   // propagate changes on customer entity to product entities
+            cascade = {CascadeType.ALL},
+
+            // make sure to remove purchases if unlinked from customer
+            orphanRemoval = true,
+
+            // user customer foreign key on product table to establish
+            // the many-to-one relationship instead of a join table
+            mappedBy = "purchase",
+
+            // fetch purchases from database together with user
+            fetch = FetchType.EAGER)
+    private Set<Product> map = new HashSet<>();
 
     public Customer getCustomer() {
         return customer;
@@ -33,17 +47,12 @@ public class Purchase extends AbstractModel {
                 "} " + super.toString();
     }
 
-    public void updateProduct(Product product, int quantity) {
-
-        if (quantity == 0) {
-            if (this.map.containsKey(product)) {
-                this.map.remove(product);
-                updateTotalPrice();
-            }
-            return;
+    public void updateProduct(Product product) {
+        if(product == null){
+            System.out.println("null");
         }
 
-        this.map.put(product, quantity);
+        this.map.add( product);
         updateTotalPrice();
     }
 
@@ -54,7 +63,7 @@ public class Purchase extends AbstractModel {
     private void updateTotalPrice() {
 
         int price = 0;
-        for (Product p : this.map.keySet()) {
+        for (Product p : this.map) {
             price += p.getPrice();
         }
 

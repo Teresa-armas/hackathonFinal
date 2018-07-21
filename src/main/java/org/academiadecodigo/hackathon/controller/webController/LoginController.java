@@ -2,7 +2,9 @@ package org.academiadecodigo.hackathon.controller.webController;
 
 import org.academiadecodigo.hackathon.persistence.model.Customer;
 import org.academiadecodigo.hackathon.persistence.model.Purchase;
+import org.academiadecodigo.hackathon.persistence.model.product.Product;
 import org.academiadecodigo.hackathon.services.CustomerService;
+import org.academiadecodigo.hackathon.services.ProductsService;
 import org.academiadecodigo.hackathon.services.PurchaseServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,12 +14,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 @Controller("/")
 public class LoginController {
 
     private PurchaseServiceInterface purchaseService;
     private CustomerService customerService;
+    private ProductsService productsService;
 
     @Autowired
     public void setPurchaseService(PurchaseServiceInterface purchaseService) {
@@ -50,8 +54,11 @@ public class LoginController {
 
         request.getSession().setAttribute("customer", Customer.class);
         Customer c = customerService.addCustomer(customer);
+        Purchase purchase = new Purchase();
+        purchase.setCustomer(c);
+        Integer id =  purchaseService.add(purchase);
 
-
+        purchaseService.updateProduct(id, new Product(), 1);
         return "redirect:/customer/cart";
     }
 
@@ -67,5 +74,10 @@ public class LoginController {
     @Autowired
     public void setCustomerService(CustomerService customerService) {
         this.customerService = customerService;
+    }
+
+    @Autowired
+    public void setProductsService(ProductsService productsService) {
+        this.productsService = productsService;
     }
 }
