@@ -8,7 +8,6 @@ import java.util.HashMap;
 @Entity
 @Table(name = "purchases")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "account_type")
 public class Purchase extends AbstractModel {
 
     @ManyToOne
@@ -66,7 +65,11 @@ public class Purchase extends AbstractModel {
         return address;
     }
 
-    public void setAddress(String address) {
+    public void setAddress(String address)
+    {
         this.address = address;
+    }
+    public void deleteAllProducts(){
+        map.clear();
     }
 }

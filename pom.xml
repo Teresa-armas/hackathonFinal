@@ -1,7 +1,7 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.academiadecodigo.hackathon</groupId>
-    <artifactId>javabank-step8-spring.tx</artifactId>
+    <artifactId>hackathon-spring.tx</artifactId>
     <packaging>war</packaging>
     <version>0.0.1</version>
 
@@ -98,6 +98,12 @@
             <version>5.1.44</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.7.2</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -150,8 +156,8 @@
                     <url>http://localhost:8080/manager/text</url>
                     <server>tomcat</server>
                     <path>/hackathon</path>
-                    <username>luis</username>
-                    <password>admin</password>
+                    <username>alfredo</username>
+                    <password></password>
                 </configuration>
             </plugin>
         </plugins>

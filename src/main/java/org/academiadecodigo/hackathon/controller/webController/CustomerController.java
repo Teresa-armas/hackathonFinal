@@ -1,6 +1,5 @@
 package org.academiadecodigo.hackathon.controller.webController;
 
-import org.academiadecodigo.hackathon.persistence.model.Customer;
 import org.academiadecodigo.hackathon.services.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/customer")
 public class CustomerController {
 
     private CustomerService customerService;
@@ -22,7 +21,7 @@ public class CustomerController {
 
         //model.addAttribute("customer", c);
 
-        return "default";
+        return "random";
 
     }
 

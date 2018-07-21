@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns:th="">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>TOURADAS XPRESS: LOGIN</title>
@@ -156,7 +156,7 @@
         <div class="flex-item2">
 
             <div class="container">
-                <form th:object= "${customer}" name="customer" th:action= "@{million_dollar}" action="#" class="form-horizontal" role="form">
+                <form th:object= "${customer}" name="customer" th:action= "@{/million_dollar}" action="#" class="form-horizontal" role="form">
                     <fieldset>
                         <legend style = "color: white">Só a dois passos de uma tourada de sonho</legend>
                         <div class="form-group">
@@ -181,8 +181,6 @@
             </div>
         </div>
     </div>
-
-
 </div>
 
 

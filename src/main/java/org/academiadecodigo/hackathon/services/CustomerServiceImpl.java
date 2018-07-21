@@ -3,6 +3,7 @@ package org.academiadecodigo.hackathon.services;
 import org.academiadecodigo.hackathon.persistence.model.Customer;
 import org.academiadecodigo.hackathon.persistence.model.Purchase;
 import org.academiadecodigo.hackathon.persistence.dao.CustomerDao;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,8 +14,10 @@ import java.util.Set;
 @Service
 public class CustomerServiceImpl implements CustomerService {
 
+
     private CustomerDao customerDao;
 
+    @Autowired
     public void setCustomerDao(CustomerDao customerDao) {
         this.customerDao = customerDao;
     }
