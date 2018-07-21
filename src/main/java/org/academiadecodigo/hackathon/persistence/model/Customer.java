@@ -17,17 +17,17 @@ public class Customer extends AbstractModel {
             // propagate changes on customer entity to product entities
             cascade = {CascadeType.ALL},
 
-            // make sure to remove accounts if unlinked from customer
+            // make sure to remove purchases if unlinked from customer
             orphanRemoval = true,
 
             // user customer foreign key on product table to establish
             // the many-to-one relationship instead of a join table
             mappedBy = "customer",
 
-            // fetch accounts from database together with user
+            // fetch purchases from database together with user
             fetch = FetchType.EAGER
     )
-    private List<Purchase> accounts = new ArrayList<>();
+    private List<Purchase> purchases = new ArrayList<>();
 
     @OneToMany(
             // propagate changes on customer entity to product entities
@@ -66,19 +66,19 @@ public class Customer extends AbstractModel {
     }
 
 
-    public List<Purchase> getAccounts() {
-        return accounts;
+    public List<Purchase> getPurchases() {
+        return purchases;
     }
 
 
 
     public void addAccount(Purchase account) {
-        accounts.add(account);
+        purchases.add(account);
         account.setCustomer(this);
     }
 
     public void removeAccount(Purchase account) {
-        accounts.remove(account);
+        purchases.remove(account);
         account.setCustomer(null);
     }
 
@@ -93,7 +93,7 @@ public class Customer extends AbstractModel {
                 "Name='" + name+ '\'' +
                 ", email='" + email + '\'' +
                 ", phone='" + phone + '\'' +
-                ", accounts=" + accounts +
+                ", purchases=" + purchases +
                 "} " + super.toString();
     }
 }
