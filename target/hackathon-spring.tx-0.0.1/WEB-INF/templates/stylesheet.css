@@ -18,7 +18,6 @@ h1, li {
 }
 
 form {
-    background-color: white;
     size: 300px 300px;
 }
 
@@ -27,6 +26,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     position: center;
+
 }
 
 #signup {
@@ -144,12 +144,15 @@ a {
 
 
 .footer{
-    position: absolute;
+    position: center;
     left: 0%;
     bottom: 0%;
     width: 100%;
     background-color: grey;
     color: grey;
     text-align: center;
+}
 
+.background {
+    padding: 500px 250px 250px 250px;
 }
