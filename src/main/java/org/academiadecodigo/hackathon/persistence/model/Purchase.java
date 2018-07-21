@@ -66,7 +66,11 @@ public class Purchase extends AbstractModel {
         return address;
     }
 
-    public void setAddress(String address) {
+    public void setAddress(String address)
+    {
         this.address = address;
+    }
+    public void deleteAllProducts(){
+        map.clear();
     }
 }

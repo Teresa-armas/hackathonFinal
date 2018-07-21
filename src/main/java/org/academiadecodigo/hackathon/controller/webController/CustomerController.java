@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/customer")
 public class CustomerController {
 
     private CustomerService customerService;
@@ -21,7 +21,7 @@ public class CustomerController {
 
         //model.addAttribute("customer", c);
 
-        return "login";
+        return "random";
 
     }
 
