@@ -1,6 +1,7 @@
 package org.academiadecodigo.hackathon.services;
 
 import org.academiadecodigo.hackathon.persistence.model.Customer;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * An {@link AuthService} implementation
@@ -15,6 +16,7 @@ public class AuthServiceImpl implements AuthService {
      *
      * @param customerService the customer service to set
      */
+    @Autowired
     public void setCustomerService(CustomerService customerService) {
         this.customerService = customerService;
     }

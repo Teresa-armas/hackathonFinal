@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>TOURADAS XPRESS: LOGIN</title>
@@ -72,10 +72,8 @@
 </div>
 
 <div style="alignment: center" id="login">
-    <form name="customer" action="http://localhost:8080/hackathon/login_done" method="post">
-        <input type="text" name="username"><br>Nome de utilizador</input><br>
-        <input type="password" name="password"><br>Password</input><br>
-        <input type="checkbox" name="age"/>Tem de aceitar a nossa política de privacidade<br>
+    <form th:object="${customer}"  name="customer" th:action = "@{/login_done}" action="#" method="post">
+        <input type="text" th:field="*{name}" ><br>Nome de utilizador</input><br>
         <input type="submit" value="Fazer login"/>
     </form>
 </div>

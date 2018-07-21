@@ -49,6 +49,7 @@ public class LoginController {
     public String createCustomer(@ModelAttribute("customer") Customer customer, HttpServletRequest request) {
 
         System.out.println(customer + " OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
+        System.out.println("customer DB: "+customerService.get(1));
         request.getSession().setAttribute("customer", Customer.class);
         customerService.addCustomer(customer);
 
