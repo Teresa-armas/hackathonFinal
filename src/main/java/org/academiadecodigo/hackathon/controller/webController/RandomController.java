@@ -28,7 +28,7 @@ public class RandomController {
 
     @RequestMapping(method = RequestMethod.GET, value = {"", "/"})
     public String list(Model model, HttpServletRequest request) {
-        Purchase currentPurchase = (Purchase) request.getSession().getAttribute("currentPurchase");
+        /*Purchase currentPurchase = (Purchase) request.getSession().getAttribute("currentPurchase");
         List<Product> allProducts = productsService.listProducts();
         if(allProducts.size()!=0) {
 
@@ -45,7 +45,7 @@ public class RandomController {
                 purchaseService.updateProduct(currentPurchase.getId(), p, randomMap.get(p));
 
             }
-        }
+        }*/
 
         return "random";
     }
@@ -53,7 +53,7 @@ public class RandomController {
     @RequestMapping(method = RequestMethod.GET, value = {"/back", "/back/"})
     public String list(Model model) {
         //redirect to the view
-        return "random";
+        return "main";
     }
 
     @Autowired

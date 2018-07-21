@@ -43,10 +43,10 @@ public class CartController {
         return "cesto";
     }
 
-    @RequestMapping(method = RequestMethod.POST, value = {"", "/"})
+    /*@RequestMapping(method = RequestMethod.POST, value = {"", "/"})
     public String createCustomer(@ModelAttribute("customer") Customer customer) {
 
         return "redirect:/customer/1";
-    }
+    }*/
 
 }
