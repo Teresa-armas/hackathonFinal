@@ -26,40 +26,17 @@
 <body>
 
 <header>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">TOURADAS XPRESS | </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="main.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">TOURADA NUM MINUTO<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <header th:="${customer.name}">Garôte</header>
-                    </a>
-
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Lista de Compras</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="profile.html">Ver Perfil</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="float: right;">
         <div id="login">
-            <form action="http://localhost:8000/login_done" method="post">
-                <input type="text" name="username"> Nome de utilizador</input>
-                <input type="password" name="password"> Password</input><br>
+            <form style="display:flex; align-items: center;" action="http://localhost:8000/login_done" method="post">
+                <label>username &nbsp;</label>
+                <input type="text" name="username">
+                &nbsp;
+                <label>password &nbsp;</label>
+                <input type="password" name="password">
+            </form>
+            <br>
+            <form style = "float: right">
                 <input type="checkbox" name="age"/>Tem de aceitar a nossa política de privacidade
                 <input type="submit" value="Fazer login"/>
             </form>
