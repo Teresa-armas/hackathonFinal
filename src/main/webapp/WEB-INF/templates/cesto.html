@@ -61,6 +61,17 @@
                         <th>Quantity</th>
                         <th>Price</th>
                     </tr>
+
+                    <th:block th:each="product : ${products}">
+                        <tr>
+                            <td th:text="${product.name}">...</td>
+                            <td th:text="${user.name}">...</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" th:text="${user.address}">...</td>
+                        </tr>
+                    </th:block>
+
                     <c:forEach items="${orderInfo.details}" var="orderDetailInfo">
                         <tr>
                             <td>${orderDetailInfo.productName}</td>
