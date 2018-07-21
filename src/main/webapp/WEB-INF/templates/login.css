@@ -41,8 +41,8 @@
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
     -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    align-self: auto;
+    -ms-flex-item-align: center;
+    align-self: center;
 }
 
 .flex-item:nth-child(2) {
@@ -68,40 +68,3 @@
     -ms-flex-item-align: auto;
     align-self: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

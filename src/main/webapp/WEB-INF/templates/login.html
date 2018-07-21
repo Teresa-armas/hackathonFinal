@@ -17,7 +17,7 @@
 
     <!-- The video -->
     <video autoplay muted loop id="myVideo">
-        <source src="rain.mp4" type="video/mp4">
+        <source src="https://giant.gfycat.com/HardShamelessCanary.webm" type="video/webm">
     </video>
 
     <style>
@@ -29,6 +29,7 @@
             bottom: 0;
             min-width: 100%;
             min-height: 100%;
+            z-index: -1;
         }
 
         .myButton {
@@ -54,20 +55,22 @@
             box-shadow: 3px 5px 5px goldenrod;
             border-radius: 2px;
             transition: all 1s ease;
-            transform: scale(1);
+            transform: scale(1.5);
         }
 
         .green:hover {
             background-color: gold;
             /*  Making button bigger on hover  */
-            transform: scale(1.5) perspective(1px)
+            transform: scale(2) perspective(1px)
         }
 
         .background {
 
             background-image: url("");
             background-attachment: fixed;
-            background-position-x: center;
+            background-position-x: right;
+            background-color: darkcyan;
+            width: 1500px;
 
         }
 
@@ -127,27 +130,6 @@
 
 <header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">TOURADAS XPRESS | </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-            <form class="form-inline my-2 my-lg-0">
-                <div class="flex-container">
-                    <label for="staticEmail" class="flex-item">Email</label>&nbsp;
-                    <input type="text" class="form-control flex-item" id="staticEmail" value="email@exemplo.com">&nbsp;
-                    <label for="inputPassword" class="flex-item">Password</label>&nbsp;
-                    <input type="password" class="form-control flex-item" id="inputPassword" placeholder="Password">&nbsp;
-                    <button type="submit" class="btn btn-primary flex-item">Fazer Login</button>&nbsp;
-                </div>
-
-            </form>
-        </div>
-    </nav>
 </header>
 
 <!--
@@ -156,14 +138,8 @@
 </script>
 -->
 
-<!--
-<div class="imgbox">
-    <img src="img/DSCF0096.JPG" class="center-fit" alt="Responsive image">
-</div>
--->
-
-<div class="jumbotron background" align="center">
     <img src="img/touradas-xpress-logo.png" width="1880" alt="TOURADAS EXPRESS">
+<div class="jumbotron background" align="center">
     <div class="flex-container2">
         <div class="flex-item2">
             <div class="container">
@@ -211,14 +187,13 @@
     </div>
 </div>
 
-
-<div class="card-footer text-muted">
-    <p align="center" style="color: darkslategrey">XPRESS TEAM © 2018</p>
+<br><br><br><br>
+<div class="card-footer text-muted" style="background-color: #d7d7d7">
+    <p align="center" style="color: darkslategrey">XPRESS TEAM © 2018</p><br><br><br>
 </div>
 
 <audio
         id="t-rex-roar"
-        controls
         autoplay
         loop
         src="audio/Tourada.mp3">
