@@ -52,11 +52,11 @@
     </nav>
 </header>
 <div class="background">
-        <div class="content">
+        <div class="content" align="center">
 
             <form action="http://localhost:8000" method="get">
-                <table border="1" style="width:100%" align="center">
-                    <tr>
+                <table border="1" width="100%" align="center">
+                    <tr align="center">
                         <th>Product Name</th>
                         <th>Quantity</th>
                         <th>Price</th>
@@ -79,8 +79,9 @@
                             <td>
                                 <fmt: formatNumber value="${orderDetailInfo.price}" type="currency"/>
                             </td>
+
                         </tr>
-                    </c:forEach>
+
                 </table>
             </form>
         </div>
@@ -89,7 +90,7 @@
           class="form-horizontal" role="form">
         <fieldset>
             <legend>
-                <div class="form-group">
+                <div class="form-group" align="center">
                     <label style="color: white" class="col-sm-3 control-label" for="card-holder-name">Morada</label>
                     <div class="col-sm-8">
                         <input type="text" th:field="*{address}" class="form-control"
@@ -107,10 +108,9 @@
             <button align="center">Comprar</button>
         </div>
 
-        <div class="footer text-muted">
-            <p class="footer-text">XPRESS TEAM © 2018</p>
 </div>
+<div class="footer text-muted">
+    <p class="footer-text">XPRESS TEAM © 2018</p>
 </div>
-
 </body>
 </html>

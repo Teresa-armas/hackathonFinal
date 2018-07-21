@@ -21,13 +21,43 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <!------ Include the above in your HEAD tag ---------->
+
+    <style>
+        .background{
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img/15.jpg");
+            position: relative;
+            text-align: center;
+
+        }
+    </style>
 </head>
 <body>
+<header>
 
-<br>
-<br>
-<br>
-<br>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">TOURADAS XPRESS | </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <form class="form-inline my-2 my-lg-0">
+                <div class="flex-container">
+                    <label for="staticEmail" class="flex-item">Email</label>&nbsp;
+                    <input type="text" class="form-control flex-item" id="staticEmail" value="email@example.com">&nbsp;
+                    <label for="inputPassword" class="flex-item">Password</label>&nbsp;
+                    <input type="password" class="form-control flex-item" id="inputPassword" placeholder="Password">&nbsp;
+                    <button type="submit" class="btn btn-primary flex-item">Login</button>&nbsp;
+                </div>
+
+            </form>
+        </div>
+    </nav>
+</header>
+<div class="background">
+
 <div class="container">
     <div class="row">
         <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
@@ -82,162 +112,10 @@
         </div>
     </div>
 </div>
-<br>
-<br>
-<br>
-<br>
-<br><br>
-<br>
-<br>
-<br>
-<br><br>
-<br>
-<br>
-<br>
-<br><br>
-<br>
-<br>
-
-<div class="card-footer text-muted">
-    <p align="center">XPRESS TEAM © 2018</p>
 </div>
 
+<div class="footer texte-muted">
+    <p class="footer-text">XPRESS TEAM © 2018</p>
+</div>
 </body>
-<style>
-    p {
-        border: aliceblue;
-        font-size: 20px;
-        font-family: 'Oswald', sans-serif;
-    }
-
-    header {
-        color: white;
-    }
-
-    h1, li {
-        font-family: 'Oswald', sans-serif;
-        font-size: 48px;
-        font-style: oblique;
-        font-size: larger;
-        text-align: center;
-        text-decoration-color: aquamarine;
-    }
-
-    form {
-        size: 300px 300px;
-    }
-
-    footer {
-        color: black;
-        alignment: bottom;
-    }
-
-    body {
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    #signup {
-        display: block;
-        width: 500px;
-    }
-
-    #leftcolumn {
-        float:left;
-        display:inline-block;
-        width: 50%;
-        height: 100%;
-    }
-
-    #rightcolumn {
-        float:right;
-        display: inline-block;
-        height: 100%;
-        width: 30%;
-    }
-
-    #buynow_button{
-        background-color: #4CAF50;
-        border: none;
-        color: white;
-        padding: 15px 25px;
-        width: 300px;
-        height: 400px;
-        text-align: center;
-        font-size: 16px;
-        cursor: pointer;
-        alignment: center;
-    }
-
-    .button:hover {
-        background-color: green;
-    }
-
-
-    .options{
-        width: 100%;
-        list-style-type: none;
-    }
-
-    .imgbox {
-        display: grid;
-        height: 100%;
-    }
-    .center-fit {
-        max-width: 100em;
-        max-height: 100em;
-        margin: auto;
-    }
-
-    a {
-        text-decoration: none;
-        font-size: 22px;
-        color: black;
-    }
-
-    .flex-container {
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-align-content: stretch;
-        -ms-flex-line-pack: stretch;
-        align-content: stretch;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-
-    .flex-item:nth-child(1) {
-        -webkit-order: 0;
-        -ms-flex-order: 0;
-        order: 0;
-        -webkit-flex: 0 1 auto;
-        -ms-flex: 0 1 auto;
-        flex: 0 1 auto;
-        -webkit-align-self: auto;
-        -ms-flex-item-align: auto;
-        align-self: auto;
-    }
-
-    .flex-item:nth-child(2) {
-        -webkit-order: 0;
-        -ms-flex-order: 0;
-        order: 0;
-        -webkit-flex: 0 1 auto;
-        -ms-flex: 0 1 auto;
-        flex: 0 1 auto;
-        -webkit-align-self: auto;
-        -ms-flex-item-align: auto;
-        align-self: auto;
-    }
-</style>
 </html>

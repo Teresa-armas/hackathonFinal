@@ -2,6 +2,7 @@ package org.academiadecodigo.hackathon.persistence.dao.jpa;
 
 import org.academiadecodigo.hackathon.persistence.model.Model;
 import org.academiadecodigo.hackathon.persistence.dao.Dao;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

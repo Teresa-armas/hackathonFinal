@@ -9,6 +9,19 @@ import java.util.List;
 public class Customer extends AbstractModel {
 
     private String name;
+
+    public String getCreditCard() {
+        return creditCard;
+    }
+
+    public void setCreditCard(String creditCard) {
+        this.creditCard = creditCard;
+    }
+
+    public void setPurchases(List<Purchase> purchases) {
+        this.purchases = purchases;
+    }
+
     private String creditCard;
     private String email;
     private String phone;

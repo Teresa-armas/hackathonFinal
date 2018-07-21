@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @Controller
-@RequestMapping("/cart")
+@RequestMapping("/customer/cart")
 @SessionAttributes({"customer", "purchase"})
 public class CartController {
 
@@ -37,12 +37,13 @@ public class CartController {
         System.out.println(customer.getName());
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = "/test")
-    public void populatePurchase(@ModelAttribute("purchase") Purchase purchase) {
-        System.out.println(purchase.getCustomer().getName());
+    @RequestMapping(method = RequestMethod.GET, value = "")
+    public String getRequest(@ModelAttribute("purchase") Purchase purchase) {
+
+        return "cesto";
     }
 
-    @RequestMapping(method = RequestMethod.POST, value = "")
+    @RequestMapping(method = RequestMethod.POST, value = {"", "/"})
     public String createCustomer(@ModelAttribute("customer") Customer customer) {
 
         return "redirect:/customer/1";

@@ -37,7 +37,7 @@ public class PurchaseService implements PurchaseServiceInterface {
     public void updateProduct(Integer purchaseId, Product product, int quantity) {
 
         Purchase purchase = purchaseDao.findById(purchaseId);
-        purchase.updateProduct(product,quantity);
+        purchase.updateProduct(product);
     }
 
     @Transactional

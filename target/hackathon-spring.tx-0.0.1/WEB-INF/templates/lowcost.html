@@ -4,57 +4,78 @@
     <meta charset="UTF-8">
     <title>LowCost</title>
 
+    <link rel="icon">
+    <meta name="keywords" content="touradas, cerveja, diversão, ilha Terceira, Terceira, Açores, Azores">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+          integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
     <style>
-        .description{
-            margin: 20px 20px;
-
-        }
-
-        p{
-            font-size: 100%;
-
+        .background{
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img/15.jpg");
+            position: relative;
+            text-align: center;
+            color: white;
         }
     </style>
 </head>
-<body>
+<body align="center">
+<header>
 
-<div>
-    <h1 id="title">Tourada Expresso</h1>
-</div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">TOURADAS XPRESS | </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="main.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TOURADA NUM MINUTO<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <header th:="${customer.name}">Garôte</header>
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Lista de Compras</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Ver Perfil</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Procurar" aria-label="Procurar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
+            </form>
+        </div>
+    </nav>
+</header>
+<div class="background">
 <div class="description">
 
-    <ul>
-        <div>
-            <p>Escolheu o pacote Low-Cost, por 866,67 EUROS</p>
-            <p>Este pack inclui:</p>
-            <ul>
-                <li>2 touros completos e 1 só com 3 pernas</li>
-                <img src="images/bored-bull.jpg"/>
-
-            </ul>
-        </div>
-
-        <div>
-            <ul>
-                <li>Cerveja fora de prazo</li>
-                <img src="images/bad-beer.jpg"/>
-
-            </ul>
-        </div>
-
-
-    </ul>
-
+    <h2>Escolheu o pacote Low-Cost, por 866,67 EUROS</h2>
+    <h3>Este pack inclui:</h3>
+    <br>
+    <p>2 touros completos e 1 só com 3 pernas</p>
+    <img src="img/bored-bull.jpg" width="250px"/>
+    <p>Cerveja fora de prazo</p>
+    <img src="img/bad-beer.jpg" width="250px"/>
 </div>
 
 <div>
-    <button>Compre</button>
+    <button>Comprar</button>
 </div>
-
-<div class="card-footer text-muted">
-    <p align="center">XPRESS TEAM © 2018</p>
 </div>
-
+<div class="footer texte-muted">
+    <p class="footer-text">XPRESS TEAM © 2018</p>
+</div>
 </body>
 </html>
