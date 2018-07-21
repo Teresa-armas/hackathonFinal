@@ -11,7 +11,7 @@
           integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
 
-    <style>
+<style>
 
         .myButton {
             border-radius: 5px;
@@ -47,12 +47,11 @@
 
         .background {
 
-            background-image: url("http://1.bp.blogspot.com/_l9-voqxSgNc/TUXkz8k19lI/AAAAAAAAA_w/CsqY3byXCWM/s1600/DSCF0097.JPG");
+            background-image: url("img/DSCF0097.JPG");
             background-attachment: fixed;
             background-position-x: center;
 
         }
-
 
         .flex-container2 {
             display: -ms-flexbox;
@@ -99,7 +98,7 @@
             align-self: auto;
         }
 
-        p{
+        p {
             color: white;
             font-family: Monaco;
         }
@@ -122,10 +121,10 @@
             <form class="form-inline my-2 my-lg-0">
                 <div class="flex-container">
                     <label for="staticEmail" class="flex-item">Email</label>&nbsp;
-                    <input type="text" class="form-control flex-item" id="staticEmail" value="email@example.com">&nbsp;
+                    <input type="text" class="form-control flex-item" id="staticEmail" value="email@exemplo.com">&nbsp;
                     <label for="inputPassword" class="flex-item">Password</label>&nbsp;
                     <input type="password" class="form-control flex-item" id="inputPassword" placeholder="Password">&nbsp;
-                    <button type="submit" class="btn btn-primary flex-item">Login</button>&nbsp;
+                    <button type="submit" class="btn btn-primary flex-item">Fazer Login</button>&nbsp;
                 </div>
 
             </form>
@@ -146,40 +145,61 @@
 -->
 
 <div class="jumbotron background" align="center">
-
+<img src="img/touradas-xpress-logo.png" width="1880" alt="TOURADAS EXPRESS">
     <div class="flex-container2">
         <div class="flex-item2">
             <div class="container">
-            <p class="lead">Quer uma tourada "à moda da ilha Terceira",</p>
-            <p>mas não se quer chatear?</p>
-            <p>Basta clicar no botão abaixo e num minuto, </p>
-            <p>tem uma tourada pronta, com licença de fogo, de tourada</p>
-            <p>requisições já incluídas.</p>
+                <p class="lead">Quer uma tourada "à moda da ilha Terceira",</p>
+                <p>mas não se quer chatear?</p>
+                <p>Basta clicar no botão abaixo e num minuto, </p>
+                <p>tem uma tourada pronta, com licença de fogo e de tourada,</p>
+                <p>e requisições já incluídas.</p>
             </div>
         </div>
         <div class="flex-item2">
 
             <div class="container">
-                <form th:object= "${customer}" name="customer" th:action= "@{/million_dollar}" action="#" class="form-horizontal" role="form">
+                <form th:object="${customer}" name="customer" th:action="@{/million_dollar}" action="#"
+                      class="form-horizontal" role="form">
                     <fieldset>
-                        <legend style = "color: white">Só a dois passos de uma tourada de sonho</legend>
+                        <legend style="color: white">Só a dois passos de uma tourada de sonho</legend>
                         <div class="form-group">
-                            <label style = "color:white"class="col-sm-3 control-label" for="card-holder-name">Nome no cartão</label>
+                            <label style="color:white" class="col-sm-3 control-label" for="card-holder-name">Nome no
+                                cartão</label>
                             <div class="col-sm-8">
-                                <input type="text" th:field="*{name}" class="form-control" name="card-holder-name" id="card-holder-name"
+                                <input type="text" th:field="*{name}" class="form-control" name="card-holder-name"
+                                       id="card-holder-name"
                                        placeholder="ex: Pedro Antoninho">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label style = "color:white" class="col-sm-3 control-label" for="card-number">Número do cartão</label>
+                            <label style="color:white" class="col-sm-3 control-label" for="card-number">Número do
+                                cartão</label>
                             <div class="col-sm-8">
-                                <input type="text" th:field="*{creditCard}" class="form-control" name="card-number" id="card-number"
+                                <input type="text" th:field="*{creditCard}" class="form-control" name="card-number"
+                                       id="card-number"
                                        placeholder="ex: 9344 9425 54854 5495 34">
                             </div>
                         </div>
                     </fieldset>
+                    <form th:object="${purchase}" name="purchase" th:action="@{/million_dollar}" action="#"
+                          class="form-horizontal" role="form">
+                        <fieldset>
+                            <legend>
+                                <div class="form-group">
+                                    <label style="color: white" class="col-sm-3 control-label" for="card-holder-name">Morada</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" th:field="*{address}" class="form-control"
+                                               name="address-holder-name" id="address-holder-name"
+                                               placeholder="ex:Rua ilha do pico">
+                                    </div>
+                            </legend>
+                        </fieldset>
+
+                    </form>
+
                     <div id="buttons">
-                        <a href="#" class="myButton green">Comprar</a>
+                        <button href="#" class="myButton green">Comprar</button>
                     </div>
                 </form>
             </div>
@@ -187,12 +207,6 @@
     </div>
 </div>
 
-
-</div>
-<br>
-
-
-</div>
 <!-- <div align="center" class="video">
 
     <video controls>
@@ -200,9 +214,19 @@
     </video>
 
 </div> -->
-<div class="footer text-muted">
-    <p class="footer-text">XPRESS TEAM © 2018</p>
+<div class="card-footer text-muted">
+    <p align="center" style="color: darkslategrey">XPRESS TEAM © 2018</p>
 </div>
+
+<audio
+        id="t-rex-roar"
+        controls
+        autoplay
+        loop
+        src="audio/Tourada.mp3">
+    Your browser does not support the <code>audio</code> element.
+</audio>
+
 </body>
 </html>
 
