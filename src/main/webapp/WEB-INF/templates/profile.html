@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>TOURADAS XPRESS : PERFIL</title>
     <link rel="icon">
     <meta name="keywords" content="touradas, cerveja, diversão, ilha Terceira, Terceira, Açores, Azores">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-    <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
           integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -24,39 +23,50 @@
     <!------ Include the above in your HEAD tag ---------->
 </head>
 <body>
+<header>
 
-<br>
-<br>
-<br>
-<br>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">TOURADAS XPRESS | </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <form class="form-inline my-2 my-lg-0">
+                <div class="flex-container">
+                    <label for="staticEmail" class="flex-item">Email</label>&nbsp;
+                    <input type="text" class="form-control flex-item" id="staticEmail" value="email@example.com">&nbsp;
+                    <label for="inputPassword" class="flex-item">Password</label>&nbsp;
+                    <input type="password" class="form-control flex-item" id="inputPassword" placeholder="Password">&nbsp;
+                    <button type="submit" class="btn btn-primary flex-item">Login</button>&nbsp;
+                </div>
+
+            </form>
+        </div>
+    </nav>
+</header>
+
 <div class="container">
     <div class="row">
         <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
-            <!-- <A href="edit.html">Editar Perfil</A>
-            <br>
-            <A href="edit.html">Logout</A>
-            <br> -->
-            <p class=" text-info">May 05,2014,03:00 pm </p>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad">
 
             <div class="panel panel-info">
                 <div class="panel-heading">
-                    <h3 class="panel-title">$NOME DO CLIENTE$</h3>
+                    <h3 class="panel-title" th:text="${customer.name}">NOME DO CLIENTE</h3>
                 </div>
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-md-3 col-lg-3 " align="center"><img alt="User Pic"
-                                                                            src="img/Generic-Profile.jpg"
+                                                                            src="./img/Generic-Profile.jpg"
                                                                             class="img-circle img-responsive"></div>
 
                         <div class=" col-md-9 col-lg-9 ">
                             <table class="table table-user-information">
                                 <tbody>
-                                <tr>
-                                    <td>Morada:</td>
-                                    <td>Rua da Academia, 666</td>
-                                </tr>
                                 <tr>
                                     <td>Data de inscrição:</td>
                                     <td>06/23/2013</td>
@@ -92,6 +102,7 @@
         </div>
     </div>
 </div>
+
 
 <div class="footer texte-muted">
     <p class="footer-text">XPRESS TEAM © 2018</p>

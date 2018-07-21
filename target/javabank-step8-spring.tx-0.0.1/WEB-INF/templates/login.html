@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="pt" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns:th="">
 <head>
     <meta charset="UTF-8">
     <title>TOURADAS XPRESS: LOGIN</title>
@@ -9,17 +9,47 @@
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
           integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
-            integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-            crossorigin="anonymous"></script>
+
 </head>
 <body>
+
+<header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">TOURADAS XPRESS | </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="main.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TOURADA NUM MINUTO<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <header th:="${customer.name}">Garôte</header>
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Lista de Compras</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Ver Perfil</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Procurar" aria-label="Procurar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
+            </form>
+        </div>
+    </nav>
+</header>
 
 <!--
 <script>
@@ -42,35 +72,14 @@
     <a class="btn btn-primary btn-lg" href="#" role="button">COMPRAR JÁ</a>
 </div>
 
-<div id="maincontainer">
-
-    <div id="leftcolumn" class="form" align="center">
-        <form action="http://localhost:8000/login_done" method="post">
-            <input type="text" name="username"><br>Nome de utilizador</input><br>
-            <input type="password" name="password"><br>Password</input><br>
-            <input type="checkbox" name="age"/>Tem de aceitar a nossa política de privacidade<br>
-            <input type="submit" value="Fazer login"/>
-        </form>
-    </div>
-
-    <div id="rightcolumn" align="center">
-        <form>
-            <h3 style="background-color: white">Para se inscrever, preencha os seguintes campos</h3>
-            <div class="form-group">
-                <label for="exampleInputEmail1"><br>Endereço de e-mail</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                       placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted"><br>Nunca iremos partilhar as suas informações
-                </small>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1"><br>Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <br>
-            <button type="submit" class="btn btn-primary">Submeter</button>
-        </form>
-    </div>
+<div style="alignment: center" id="login">
+    <form action="http://localhost:8000/login_done" method="post">
+        <input type="text" name="username"><br>Nome de utilizador</input><br>
+        <input type="password" name="password"><br>Password</input><br>
+        <input type="checkbox" name="age"/>Tem de aceitar a nossa política de privacidade<br>
+        <input type="submit" value="Fazer login"/>
+    </form>
+</div>
 
 </div>
 <br>
@@ -83,22 +92,7 @@
 <br><br>
 <br>
 <br>
-<br><br>
-<br>
-<br>
-<br><br>
-<br>
-<br>
-<br><br>
-<br>
-<!--
-<div id="buynow_button">
 
-    <button class="button">COMPRE JÁ</button>
-    <H2>TOURADA SIMPLES</H2>
-
-</div>
--->
 <!-- <div align="center" class="video">
 
     <video controls>
