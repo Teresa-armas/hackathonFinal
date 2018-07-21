@@ -147,6 +147,7 @@ a {
     position: center;
     left: 0%;
     bottom: 0%;
+    margin:0;
     width: 100%;
     background-color: grey;
     color: grey;
@@ -156,4 +157,8 @@ a {
 
 .background {
     padding: 500px 250px 250px 250px;
+}
+
+.jumbotron{
+    background-attachment: fixed;
 }
