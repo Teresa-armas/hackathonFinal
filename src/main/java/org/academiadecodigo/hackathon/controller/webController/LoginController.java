@@ -34,7 +34,7 @@ public class LoginController {
         return new Purchase();
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = "/badjoras")
+    /*@RequestMapping(method = RequestMethod.GET, value = "/badjoras")
     public void populateCustomer(@ModelAttribute("customer") Customer customer) {
         customer.setName("alfredo");
         System.out.println(customer.getName());
@@ -43,15 +43,16 @@ public class LoginController {
     @RequestMapping(method = RequestMethod.GET, value = "/test")
     public void populatePurchase(@ModelAttribute("purchase") Purchase purchase) {
         System.out.println(purchase.getCustomer().getName());
-    }
+    }*/
 
-    @RequestMapping(method = RequestMethod.POST, value = "/login_done")
+    @RequestMapping(method = RequestMethod.POST, value = {"/millionDollar", "/millionDollar"})
     public String createCustomer(@ModelAttribute("customer") Customer customer, HttpServletRequest request) {
 
         request.getSession().setAttribute("customer", Customer.class);
-        customerService.addCustomer(customer);
+        Customer c = customerService.addCustomer(customer);
 
-        return "redirect:/customer/" + customer.getId();
+
+        return "redirect:/customer/cart";
     }
 
     @RequestMapping(method = RequestMethod.GET , value = "/login")

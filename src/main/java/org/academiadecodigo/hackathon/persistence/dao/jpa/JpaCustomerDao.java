@@ -4,7 +4,6 @@ import org.academiadecodigo.hackathon.persistence.model.Customer;
 import org.academiadecodigo.hackathon.persistence.dao.CustomerDao;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
 
 /**
  * A JPA {@link CustomerDao} implementation

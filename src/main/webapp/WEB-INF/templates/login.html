@@ -6,11 +6,146 @@
     <link rel="icon">
     <meta name="keywords" content="touradas, cerveja, diversão, ilha Terceira, Terceira, Açores, Azores">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-    <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
           integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
     <style>
+        p {
+            border: aliceblue;
+            font-size: 20px;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        header {
+            color: white;
+        }
+
+        h1, li {
+            font-family: 'Oswald', sans-serif;
+            font-size: 48px;
+            font-style: oblique;
+            font-size: larger;
+            text-align: center;
+            text-decoration-color: aquamarine;
+        }
+
+        form {
+            size: 300px 300px;
+        }
+
+        footer {
+            color: black;
+            alignment: bottom;
+        }
+
+        body {
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #signup {
+            display: block;
+            width: 500px;
+        }
+
+        #leftcolumn {
+            float:left;
+            display:inline-block;
+            width: 50%;
+            height: 100%;
+        }
+
+        #rightcolumn {
+            float:right;
+            display: inline-block;
+            height: 100%;
+            width: 30%;
+        }
+
+        #buynow_button{
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 25px;
+            width: 300px;
+            height: 400px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            alignment: center;
+        }
+
+        .button:hover {
+            background-color: green;
+        }
+
+
+        .options{
+            width: 100%;
+            list-style-type: none;
+        }
+
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100em;
+            max-height: 100em;
+            margin: auto;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+        }
+
+        .flex-container {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-align-content: stretch;
+            -ms-flex-line-pack: stretch;
+            align-content: stretch;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .flex-item:nth-child(1) {
+            -webkit-order: 0;
+            -ms-flex-order: 0;
+            order: 0;
+            -webkit-flex: 0 1 auto;
+            -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+            -webkit-align-self: auto;
+            -ms-flex-item-align: auto;
+            align-self: auto;
+        }
+
+        .flex-item:nth-child(2) {
+            -webkit-order: 0;
+            -ms-flex-order: 0;
+            order: 0;
+            -webkit-flex: 0 1 auto;
+            -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+            -webkit-align-self: auto;
+            -ms-flex-item-align: auto;
+            align-self: auto;
+        }
 
         .myButton {
             border-radius: 5px;
@@ -156,7 +291,7 @@
         <div class="flex-item2">
 
             <div class="container">
-                <form th:object= "${customer}" name="customer" th:action= "@{/million_dollar}" action="#" class="form-horizontal" role="form">
+                <form th:object= "${customer}" name="customer" th:action= "@{/millionDollar}" action="#" method="post" class="form-horizontal" role="form">
                     <fieldset>
                         <legend style = "color: white">Só a dois passos de uma tourada de sonho</legend>
                         <div class="form-group">
@@ -169,13 +304,13 @@
                         <div class="form-group">
                             <label style = "color:white" class="col-sm-3 control-label" for="card-number">Número do cartão</label>
                             <div class="col-sm-8">
-                                <input type="text" th:field="*{creditCard}" class="form-control" name="card-number" id="card-number"
+                                <input type="text" th:field="*{creditCard}" class="form-control" name="creditCard" id="card-number"
                                        placeholder="ex: 9344 9425 54854 5495 34">
                             </div>
                         </div>
                     </fieldset>
                     <div id="buttons">
-                        <a href="#" class="myButton green">Comprar</a>
+                        <button type="submit" value="Submit" class="myButton green">Comprar</button>
                     </div>
                 </form>
             </div>
