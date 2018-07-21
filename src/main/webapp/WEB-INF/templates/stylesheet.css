@@ -152,7 +152,6 @@ a {
     background-color: grey;
     color: grey;
     text-align: center;
-    background-image: url("");
 }
 
 .background {
@@ -161,4 +160,5 @@ a {
 
 .jumbotron{
     background-attachment: fixed;
+    opacity: 0.8;
 }
