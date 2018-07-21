@@ -12,6 +12,17 @@
           integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="">
+
+    <style>
+       .background{
+           background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img/15.jpg");
+           position: relative;
+           text-align: center;
+           color: white;
+        }
+
+
+    </style>
 </head>
 
 
@@ -40,36 +51,38 @@
         </div>
     </nav>
 </header>
+<div class="background">
+        <div class="content">
 
-<div class="content">
+            <form action="http://localhost:8000" method="get">
+                <table border="1" style="width:100%" align="center">
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                    <c:forEach items="${orderInfo.details}" var="orderDetailInfo">
+                        <tr>
+                            <td>${orderDetailInfo.productName}</td>
+                            <td>${orderDetailInfo.quantity</td>
+                            <td>
+                                <fmt: formatNumber value="${orderDetailInfo.price}" type="currency"/>
+                            </td>
+                        </tr>
+                    </c:forEach>
+                </table>
+            </form>
+        </div>
 
- <form action="http://localhost:8000" method="get">
-     <table border="1" style="width:100%">
-         <tr>
-             <th>Product Name</th>
-             <th>Quantity</th>
-             <th>Price</th>
-         </tr>
-         <c:forEach items="${orderInfo.details}" var="orderDetailInfo">
-         <tr>
-             <td>${orderDetailInfo.productName}</td>
-             <td>${orderDetailInfo.quantity</td>
-             <td>
-                 <fmt: formatNumber value="${orderDetailInfo.price}" type="currency"/>
-             </td>
-         </tr>
-         </c:forEach>
-     </table>
- </form>
+        <div align="center">
+            <p>Total: </p>
+            <button align="center">Comprar</button>
+        </div>
+
+        <div class="footer text-muted">
+            <p class="footer-text">XPRESS TEAM © 2018</p>
+</div>
 </div>
 
-<div align="center">
-    <p>Total: </p>
-    <button align="center">Comprar</button>
-</div>
-
-<div class="footer text-muted">
-    <p class="footer-text">XPRESS TEAM © 2018</p>
-</div>
 </body>
 </html>
